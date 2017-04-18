@@ -1,0 +1,2033 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/Hacker0x01/react-datepicker"
+
+    >react-datepicker (v0.46.0)</a>
+</h1>
+<h4>A simple and reusable datepicker component for React</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker">module react-datepicker</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.default">
+            function <span class="apidocSignatureSpan">react-datepicker.</span>default
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>calendar</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>date_utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>datepicker</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>day</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>month</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>month_dropdown</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>month_dropdown_options</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>tether_component</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>week</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>week_number</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>year_dropdown</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-datepicker.</span>year_dropdown_options</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.calendar">module react-datepicker.calendar</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.calendar.default">
+            function <span class="apidocSignatureSpan">react-datepicker.calendar.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.date_utils">module react-datepicker.date_utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.allDaysDisabledAfter">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>allDaysDisabledAfter
+            <span class="apidocSignatureSpan">(day, unit)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.allDaysDisabledBefore">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>allDaysDisabledBefore
+            <span class="apidocSignatureSpan">(day, unit)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.getEffectiveMaxDate">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>getEffectiveMaxDate
+            <span class="apidocSignatureSpan">(_ref5)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.getEffectiveMinDate">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>getEffectiveMinDate
+            <span class="apidocSignatureSpan">(_ref4)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.isDayDisabled">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>isDayDisabled
+            <span class="apidocSignatureSpan">(day)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.isDayInRange">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>isDayInRange
+            <span class="apidocSignatureSpan">(day, startDate, endDate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.isSameDay">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>isSameDay
+            <span class="apidocSignatureSpan">(moment1, moment2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.isSameUtcOffset">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>isSameUtcOffset
+            <span class="apidocSignatureSpan">(moment1, moment2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.parseDate">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>parseDate
+            <span class="apidocSignatureSpan">(value, _ref6)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.date_utils.safeDateFormat">
+            function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>safeDateFormat
+            <span class="apidocSignatureSpan">(date, _ref7)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.datepicker">module react-datepicker.datepicker</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.datepicker.default">
+            function <span class="apidocSignatureSpan">react-datepicker.datepicker.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.day">module react-datepicker.day</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.day.default">
+            function <span class="apidocSignatureSpan">react-datepicker.day.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.default">module react-datepicker.default</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.default.default">
+            function <span class="apidocSignatureSpan">react-datepicker.</span>default
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.month">module react-datepicker.month</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.month.default">
+            function <span class="apidocSignatureSpan">react-datepicker.month.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.month_dropdown">module react-datepicker.month_dropdown</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.month_dropdown.default">
+            function <span class="apidocSignatureSpan">react-datepicker.month_dropdown.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.month_dropdown_options">module react-datepicker.month_dropdown_options</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.month_dropdown_options.default">
+            function <span class="apidocSignatureSpan">react-datepicker.month_dropdown_options.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.tether_component">module react-datepicker.tether_component</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.tether_component.default">
+            function <span class="apidocSignatureSpan">react-datepicker.tether_component.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.week">module react-datepicker.week</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.week.default">
+            function <span class="apidocSignatureSpan">react-datepicker.week.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.week_number">module react-datepicker.week_number</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.week_number.default">
+            function <span class="apidocSignatureSpan">react-datepicker.week_number.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.year_dropdown">module react-datepicker.year_dropdown</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.year_dropdown.default">
+            function <span class="apidocSignatureSpan">react-datepicker.year_dropdown.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.year_dropdown_options">module react-datepicker.year_dropdown_options</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.year_dropdown_options.default">
+            function <span class="apidocSignatureSpan">react-datepicker.year_dropdown_options.</span>default
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker" id="apidoc.module.react-datepicker">module react-datepicker</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.default" id="apidoc.element.react-datepicker.default">
+        function <span class="apidocSignatureSpan">react-datepicker.</span>default
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function t(e){a(this,t);var n=i(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.getInitialState=function(){var
+ e=n.props.openToDate?(0,w.default)(n.props.openToDate):n.props.selectsEnd&#x26;&#x26;n.props.startDate?(0,w.default)(n.props.startDate):n
+.props.selectsStart&#x26;&#x26;n.props.endDate?(0,w.default)(n.props.endDate):(0,w.default)(),t=(0,v.getEffectiveMinDate)(n.props),o=(0,v.
+getEffectiveMaxDate)(n.props),r=t&#x26;&#x26;e.isBefore(t)?t:o&#x26;&#x26;e.isAfter(o)?o:e;return{open:!1,preventFocus:!1,preSelection:n.props.selected
+?(0,w.default)(n.props.selected):r}},n.clearPreventFocusTimeout=function(){n.preventFocusTimeout&#x26;&#x26;clearTimeout(n.preventFocusTimeout
+)},n.setFocus=function(){n.refs.input.focus()},n.setOpen=function(e){n.setState({open:e,preSelection:e&#x26;&#x26;n.state.open?n.state.preSelection
+:n.getInitialState().preSelection})},n.handleFocus=function(e){n.state.preventFocus||(n.props.onFocus(e),n.setOpen(!0))},n.cancelFocusInput
+=function(){clearTimeout(n.inputFocusTimeout),n.inputFocusTimeout=null},n.deferFocusInput=function(){n.cancelFocusInput(),n.inputFocusTimeout
+=window.setTimeout(function(){return n.setFocus()},1)},n.handleDropdownFocus=function(){n.cancelFocusInput()},n.handleBlur=function
+(e){n.state.open?n.deferFocusInput():n.props.onBlur(e)},n.handleCalendarClickOutside=function(e){n.setOpen(!1),n.props.onClickOutside
+(e),n.props.withPortal&#x26;&#x26;e.preventDefault()},n.handleChange=function(e){if(!n.props.onChangeRaw||(n.props.onChangeRaw(e),!e.isDefaultPrevented
+())){n.setState({inputValue:e.target.value});var t=(0,v.parseDate)(e.target.value,n.props);!t&#x26;&#x26;e.target.value||n.setSelected(t,e
+,!0)}},n.handleSelect=function(e,t){n.setState({preventFocus:!0},function(){return n.preventFocusTimeout=setTimeout(function(){return
+ n.setState({preventFocus:!1})},50),n.preventFocusTimeout}),n.setSelected(e,t),n.setOpen(!1)},n.setSelected=function(e,t,o){var
+r=e;null!==r&#x26;&#x26;(0,v.isDayDisabled)(r,n.props)||((0,v.isSameDay)(n.props.selected,r)||(null!==r&#x26;&#x26;(n.props.selected&#x26;&#x26;(r=(0,w.default
+)(r).set({hour:n.props.selected.hour(),minute:n.props.selected.minute(),second:n.props.selected.second()})),n.setState({preSelection
+:r})),n.props.onChange(r,t)),n.props.onSelect(r,t),o||n.setState({inputValue:null}))},n.setPreSelection=function(e){var t=&#x22;undefined
+&#x22;!=typeof n.props.minDate&#x26;&#x26;&#x22;undefined&#x22;!=typeof n.props.maxDate,o=!t||!e||(0,v.isDayInRange)(e,n.props.minDate,n.props.maxDate);o
+&#x26;&#x26;n.setState({preSelection:e})},n.onInputClick=function(){n.props.disabled||n.setOpen(!0)},n.onInputKeyDown=function(e){if(!n.state
+.open&#x26;&#x26;!n.props.inline)return void(/^Arrow/.test(e.key)&#x26;&#x26;n.onInputClick());var t=(0,w.default)(n.state.preSelection);if(&#x22;Enter&#x22;===
+e.key?(e.preventDefault(),n.handleSelect(t,e)):&#x22;Escape&#x22;===e.key?(e.preventDefault(),n.setOpen(!1)):&#x22;Tab&#x22;===e.key&#x26;&#x26;n.setOpen(!1),!
+n.props.disabledKeyboardNavigation){var o=void 0;switch(e.key){case&#x22;ArrowLeft&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;days&#x22;);break;case
+&#x22;ArrowRight&#x22;:e.preventDefault(),o=t.add(1,&#x22;days&#x22;);break;case&#x22;ArrowUp&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;weeks&#x22;);break;case&#x22;ArrowDown
+&#x22;:e.preventDefault(),o=t.add(1,&#x22;weeks&#x22;);break;case&#x22;PageUp&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;months&#x22;);break;case&#x22;PageDown&#x22;:e.preventDefault
+(),o=t.add(1,&#x22;months&#x22;);break;case&#x22;Home&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;years&#x22;);break;case&#x22;End&#x22;:e.preventDefault(),o=t.add(1,&#x22;
+years&#x22;)}n.setPreSelection(o)}},n.onClearClick=function(e){e.preventDefault(),n.props.onChange(null,e)},n.renderCalendar=function
+(){return n.props.inline||n.state.open&#x26;&#x26;!n.props.disabled?f.default.createElement(k,{ref:&#x22;calendar&#x22;,locale:n.props.locale,dateFormat
+:n.props.dateFormatCalendar,dropdownMode:n.props.dropdownMode,selected:n.props.selected,preSelection:n.state.preSelection,onSelect
+:n.handleSelect,openToDate:n.props.openToDate,minDate:n.props.minDate,maxDate:n.props.maxDate,selectsStart:n.props.selectsStart,
+selectsEnd:n.props.selectsEnd,startDate:n.props.startDate,endDate:n.props.endDate,excludeDates:n.props.excludeDates,filterDate:n
+.props.filterDate,onClickOutside:n.handleCalendarClickOutside,highlightDates:n.props.highlightDates,includeDates:n.p ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.calendar" id="apidoc.module.react-datepicker.calendar">module react-datepicker.calendar</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.calendar.default" id="apidoc.element.react-datepicker.calendar.default">
+        function <span class="apidocSignatureSpan">react-datepicker.calendar.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Calendar(props) {
+  _classCallCheck(this, Calendar);
+
+  var _this = _possibleConstructorReturn(this, (Calendar.__proto__ || Object.getPrototypeOf(Calendar)).call(this, props));
+
+  _this.handleClickOutside = function (event) {
+    _this.props.onClickOutside(event);
+  };
+
+  _this.handleDropdownFocus = function (event) {
+    if (isDropdownSelect(event.target)) {
+      _this.props.onDropdownFocus();
+    }
+  };
+
+  _this.getDateInView = function () {
+    var _this$props = _this.props,
+        preSelection = _this$props.preSelection,
+        selected = _this$props.selected,
+        openToDate = _this$props.openToDate,
+        utcOffset = _this$props.utcOffset;
+
+    var minDate = (0, _date_utils.getEffectiveMinDate)(_this.props);
+    var maxDate = (0, _date_utils.getEffectiveMaxDate)(_this.props);
+    var current = _moment2.default.utc().utcOffset(utcOffset);
+    var initialDate = preSelection || selected;
+    if (initialDate) {
+      return initialDate;
+    } else if (minDate &#x26;&#x26; maxDate &#x26;&#x26; openToDate &#x26;&#x26; openToDate.isBetween(minDate, maxDate)) {
+      return openToDate;
+    } else if (minDate &#x26;&#x26; openToDate &#x26;&#x26; openToDate.isAfter(minDate)) {
+      return openToDate;
+    } else if (minDate &#x26;&#x26; minDate.isAfter(current)) {
+      return minDate;
+    } else if (maxDate &#x26;&#x26; openToDate &#x26;&#x26; openToDate.isBefore(maxDate)) {
+      return openToDate;
+    } else if (maxDate &#x26;&#x26; maxDate.isBefore(current)) {
+      return maxDate;
+    } else if (openToDate) {
+      return openToDate;
+    } else {
+      return current;
+    }
+  };
+
+  _this.localizeMoment = function (date) {
+    return date.clone().locale(_this.props.locale || _moment2.default.locale());
+  };
+
+  _this.increaseMonth = function () {
+    _this.setState({
+      date: _this.state.date.clone().add(1, &#x27;month&#x27;)
+    }, function () {
+      return _this.handleMonthChange(_this.state.date);
+    });
+  };
+
+  _this.decreaseMonth = function () {
+    _this.setState({
+      date: _this.state.date.clone().subtract(1, &#x27;month&#x27;)
+    }, function () {
+      return _this.handleMonthChange(_this.state.date);
+    });
+  };
+
+  _this.handleDayClick = function (day, event) {
+    return _this.props.onSelect(day, event);
+  };
+
+  _this.handleDayMouseEnter = function (day) {
+    return _this.setState({ selectingDate: day });
+  };
+
+  _this.handleMonthMouseLeave = function () {
+    return _this.setState({ selectingDate: null });
+  };
+
+  _this.handleMonthChange = function (date) {
+    if (_this.props.onMonthChange) {
+      _this.props.onMonthChange(date);
+    }
+  };
+
+  _this.changeYear = function (year) {
+    _this.setState({
+      date: _this.state.date.clone().set(&#x27;year&#x27;, year)
+    });
+  };
+
+  _this.changeMonth = function (month) {
+    _this.setState({
+      date: _this.state.date.clone().set(&#x27;month&#x27;, month)
+    }, function () {
+      return _this.handleMonthChange(_this.state.date);
+    });
+  };
+
+  _this.header = function () {
+    var date = arguments.length &#x3e; 0 &#x26;&#x26; arguments[0] !== undefined ? arguments[0] : _this.state.date;
+
+    var startOfWeek = date.clone().startOf(&#x27;week&#x27;);
+    var dayNames = [];
+    if (_this.props.showWeekNumbers) {
+      dayNames.push(_react2.default.createElement(
+        &#x27;div&#x27;,
+        { key: &#x27;W&#x27;, className: &#x27;react-datepicker__day-name&#x27; },
+        &#x27;#&#x27;
+      ));
+    }
+    return dayNames.concat([0, 1, 2, 3, 4, 5, 6].map(function (offset) {
+      var day = startOfWeek.clone().add(offset, &#x27;days&#x27;);
+      return _react2.default.createElement(
+        &#x27;div&#x27;,
+        { key: offset, className: &#x27;react-datepicker__day-name&#x27; },
+        day.localeData().weekdaysMin(day)
+      );
+    }));
+  };
+
+  _this.renderPreviousMonthButton = function () {
+    if (!_this.props.forceShowMonthNavigation &#x26;&#x26; (0, _date_utils.allDaysDisabledBefore)(_this.state.date, &#x27;month&#x27;, _this.props)) {
+      return;
+    }
+    return _react2.default.createElement(&#x27;a&#x27;, {
+      className: &#x27;react-datepicker__navigation react-datepicker__navigation--previous&#x27;,
+      onClick: _this.decreaseMonth });
+  };
+
+  _this.renderNextMonthButton = function () {
+    if (!_this.props.forceShowMonthNavigation &#x26;&#x26; (0, _date_utils.allDaysDisabledAfter) ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.date_utils" id="apidoc.module.react-datepicker.date_utils">module react-datepicker.date_utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.allDaysDisabledAfter" id="apidoc.element.react-datepicker.date_utils.allDaysDisabledAfter">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>allDaysDisabledAfter
+        <span class="apidocSignatureSpan">(day, unit)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function allDaysDisabledAfter(day, unit) {
+  var _ref3 = arguments.length &#x3e; 2 &#x26;&#x26; arguments[2] !== undefined ? arguments[2] : {},
+      maxDate = _ref3.maxDate,
+      includeDates = _ref3.includeDates;
+
+  var dateAfter = day.clone().add(1, unit);
+  return maxDate &#x26;&#x26; dateAfter.isAfter(maxDate, unit) || includeDates &#x26;&#x26; includeDates.every(function (includeDate) {
+    return dateAfter.isAfter(includeDate, unit);
+  }) || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.allDaysDisabledBefore" id="apidoc.element.react-datepicker.date_utils.allDaysDisabledBefore">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>allDaysDisabledBefore
+        <span class="apidocSignatureSpan">(day, unit)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function allDaysDisabledBefore(day, unit) {
+  var _ref2 = arguments.length &#x3e; 2 &#x26;&#x26; arguments[2] !== undefined ? arguments[2] : {},
+      minDate = _ref2.minDate,
+      includeDates = _ref2.includeDates;
+
+  var dateBefore = day.clone().subtract(1, unit);
+  return minDate &#x26;&#x26; dateBefore.isBefore(minDate, unit) || includeDates &#x26;&#x26; includeDates.every(function (includeDate) {
+    return dateBefore.isBefore(includeDate, unit);
+  }) || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.getEffectiveMaxDate" id="apidoc.element.react-datepicker.date_utils.getEffectiveMaxDate">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>getEffectiveMaxDate
+        <span class="apidocSignatureSpan">(_ref5)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getEffectiveMaxDate(_ref5) {
+  var maxDate = _ref5.maxDate,
+      includeDates = _ref5.includeDates;
+
+  if (includeDates &#x26;&#x26; maxDate) {
+    return _moment2.default.max(includeDates.filter(function (includeDate) {
+      return maxDate.isSameOrAfter(includeDate, &#x27;day&#x27;);
+    }));
+  } else if (includeDates) {
+    return _moment2.default.max(includeDates);
+  } else {
+    return maxDate;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.getEffectiveMinDate" id="apidoc.element.react-datepicker.date_utils.getEffectiveMinDate">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>getEffectiveMinDate
+        <span class="apidocSignatureSpan">(_ref4)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getEffectiveMinDate(_ref4) {
+  var minDate = _ref4.minDate,
+      includeDates = _ref4.includeDates;
+
+  if (includeDates &#x26;&#x26; minDate) {
+    return _moment2.default.min(includeDates.filter(function (includeDate) {
+      return minDate.isSameOrBefore(includeDate, &#x27;day&#x27;);
+    }));
+  } else if (includeDates) {
+    return _moment2.default.min(includeDates);
+  } else {
+    return minDate;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.isDayDisabled" id="apidoc.element.react-datepicker.date_utils.isDayDisabled">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>isDayDisabled
+        <span class="apidocSignatureSpan">(day)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isDayDisabled(day) {
+  var _ref = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : {},
+      minDate = _ref.minDate,
+      maxDate = _ref.maxDate,
+      excludeDates = _ref.excludeDates,
+      includeDates = _ref.includeDates,
+      filterDate = _ref.filterDate;
+
+  return minDate &#x26;&#x26; day.isBefore(minDate, &#x27;day&#x27;) || maxDate &#x26;&#x26; day.isAfter(maxDate, &#x27;day&#x27;) || excludeDates &#x26;&#x26; excludeDates.some(
+function (excludeDate) {
+    return isSameDay(day, excludeDate);
+  }) || includeDates &#x26;&#x26; !includeDates.some(function (includeDate) {
+    return isSameDay(day, includeDate);
+  }) || filterDate &#x26;&#x26; !filterDate(day.clone()) || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.isDayInRange" id="apidoc.element.react-datepicker.date_utils.isDayInRange">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>isDayInRange
+        <span class="apidocSignatureSpan">(day, startDate, endDate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isDayInRange(day, startDate, endDate) {
+  var before = startDate.clone().startOf(&#x27;day&#x27;).subtract(1, &#x27;seconds&#x27;);
+  var after = endDate.clone().startOf(&#x27;day&#x27;).add(1, &#x27;seconds&#x27;);
+  return day.clone().startOf(&#x27;day&#x27;).isBetween(before, after);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.isSameDay" id="apidoc.element.react-datepicker.date_utils.isSameDay">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>isSameDay
+        <span class="apidocSignatureSpan">(moment1, moment2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSameDay(moment1, moment2) {
+  if (moment1 &#x26;&#x26; moment2) {
+    return moment1.isSame(moment2, &#x27;day&#x27;);
+  } else {
+    return !moment1 &#x26;&#x26; !moment2;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}, _this.handleMouseEnter = function (event) {
+  if (!_this.isDisabled() &#x26;&#x26; _this.props.onMouseEnter) {
+    _this.props.onMouseEnter(event);
+  }
+}, _this.isSameDay = function (other) {
+  return (0, _date_utils.isSameDay)(_this.props.day, other);
+}, _this.isKeyboardSelected = function () {
+  return !_this.props.inline &#x26;&#x26; !_this.<span class="apidocCodeKeywordSpan">isSameDay</span>(_this.props.selected) &#x26
+;&#x26; _this.isSameDay(_this.props.preSelection);
+}, _this.isDisabled = function () {
+  return (0, _date_utils.isDayDisabled)(_this.props.day, _this.props);
+}, _this.isHighlighted = function () {
+  var _this$props = _this.props,
+      day = _this$props.day,
+      highlightDates = _this$props.highlightDates;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.isSameUtcOffset" id="apidoc.element.react-datepicker.date_utils.isSameUtcOffset">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>isSameUtcOffset
+        <span class="apidocSignatureSpan">(moment1, moment2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSameUtcOffset(moment1, moment2) {
+  if (moment1 &#x26;&#x26; moment2) {
+    return moment1.utcOffset() === moment2.utcOffset();
+  } else {
+    return !moment1 &#x26;&#x26; !moment2;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.parseDate" id="apidoc.element.react-datepicker.date_utils.parseDate">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>parseDate
+        <span class="apidocSignatureSpan">(value, _ref6)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseDate(value, _ref6) {
+  var dateFormat = _ref6.dateFormat,
+      locale = _ref6.locale;
+
+  var m = (0, _moment2.default)(value, dateFormat, locale || _moment2.default.locale(), true);
+  return m.isValid() ? m : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.date_utils.safeDateFormat" id="apidoc.element.react-datepicker.date_utils.safeDateFormat">
+        function <span class="apidocSignatureSpan">react-datepicker.date_utils.</span>safeDateFormat
+        <span class="apidocSignatureSpan">(date, _ref7)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function safeDateFormat(date, _ref7) {
+  var dateFormat = _ref7.dateFormat,
+      locale = _ref7.locale;
+
+  return date &#x26;&#x26; date.clone().locale(locale || _moment2.default.locale()).format(Array.isArray(dateFormat) ? dateFormat[0] : dateFormat
+) || &#x27;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.datepicker" id="apidoc.module.react-datepicker.datepicker">module react-datepicker.datepicker</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.datepicker.default" id="apidoc.element.react-datepicker.datepicker.default">
+        function <span class="apidocSignatureSpan">react-datepicker.datepicker.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DatePicker(props) {
+  _classCallCheck(this, DatePicker);
+
+  var _this = _possibleConstructorReturn(this, (DatePicker.__proto__ || Object.getPrototypeOf(DatePicker)).call(this, props));
+
+  _this.getInitialState = function () {
+    var defaultPreSelection = _this.props.openToDate ? (0, _moment2.default)(_this.props.openToDate) : _this.props.selectsEnd &#x26;&#x26;
+_this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.props.selectsStart &#x26;&#x26; _this.props.endDate ? (0, _moment2
+.default)(_this.props.endDate) : (0, _moment2.default)();
+    var minDate = (0, _date_utils.getEffectiveMinDate)(_this.props);
+    var maxDate = (0, _date_utils.getEffectiveMaxDate)(_this.props);
+    var boundedPreSelection = minDate &#x26;&#x26; defaultPreSelection.isBefore(minDate) ? minDate : maxDate &#x26;&#x26; defaultPreSelection.isAfter
+(maxDate) ? maxDate : defaultPreSelection;
+
+    return {
+      open: false,
+      preventFocus: false,
+      preSelection: _this.props.selected ? (0, _moment2.default)(_this.props.selected) : boundedPreSelection
+    };
+  };
+
+  _this.clearPreventFocusTimeout = function () {
+    if (_this.preventFocusTimeout) {
+      clearTimeout(_this.preventFocusTimeout);
+    }
+  };
+
+  _this.setFocus = function () {
+    _this.refs.input.focus();
+  };
+
+  _this.setOpen = function (open) {
+    _this.setState({
+      open: open,
+      preSelection: open &#x26;&#x26; _this.state.open ? _this.state.preSelection : _this.getInitialState().preSelection
+    });
+  };
+
+  _this.handleFocus = function (event) {
+    if (!_this.state.preventFocus) {
+      _this.props.onFocus(event);
+      _this.setOpen(true);
+    }
+  };
+
+  _this.cancelFocusInput = function () {
+    clearTimeout(_this.inputFocusTimeout);
+    _this.inputFocusTimeout = null;
+  };
+
+  _this.deferFocusInput = function () {
+    _this.cancelFocusInput();
+    _this.inputFocusTimeout = window.setTimeout(function () {
+      return _this.setFocus();
+    }, 1);
+  };
+
+  _this.handleDropdownFocus = function () {
+    _this.cancelFocusInput();
+  };
+
+  _this.handleBlur = function (event) {
+    if (_this.state.open) {
+      _this.deferFocusInput();
+    } else {
+      _this.props.onBlur(event);
+    }
+  };
+
+  _this.handleCalendarClickOutside = function (event) {
+    _this.setOpen(false);
+    _this.props.onClickOutside(event);
+    if (_this.props.withPortal) {
+      event.preventDefault();
+    }
+  };
+
+  _this.handleChange = function (event) {
+    if (_this.props.onChangeRaw) {
+      _this.props.onChangeRaw(event);
+      if (event.isDefaultPrevented()) {
+        return;
+      }
+    }
+    _this.setState({ inputValue: event.target.value });
+    var date = (0, _date_utils.parseDate)(event.target.value, _this.props);
+    if (date || !event.target.value) {
+      _this.setSelected(date, event, true);
+    }
+  };
+
+  _this.handleSelect = function (date, event) {
+    // Preventing onFocus event to fix issue
+    // https://github.com/Hacker0x01/react-datepicker/issues/628
+    _this.setState({ preventFocus: true }, function () {
+      _this.preventFocusTimeout = setTimeout(function () {
+        return _this.setState({ preventFocus: false });
+      }, 50);
+      return _this.preventFocusTimeout;
+    });
+    _this.setSelected(date, event);
+    _this.setOpen(false);
+  };
+
+  _this.setSelected = function (date, event, keepInput) {
+    var changedDate = date;
+
+    if (changedDate !== null &#x26;&#x26; (0, _date_utils.isDayDisabled)(changedDate, _this.props)) {
+      return;
+    }
+
+    if (!(0, _date_utils.isSameDay)(_this.props.selected, changedDate)) {
+      if (changedDate !== null) {
+        if (_this.props.selected) {
+          changedDate = (0, _moment2.default)(changedDate).set({
+            hour: _this.props.selected.hour(),
+            minute: _this.props.selected.minute(),
+            second: _this.props.selected.second()
+          });
+        }
+        _this.setState({
+          preSelection: changedDate
+        });
+      }
+      _this.props.onChange(changedDate, event);
+    }
+
+    _this.props.onSelect(changedDate, event);
+
+    if (!keepInput) {
+      _this.setState({ inputValue: null });
+    }
+  };
+
+  _this.setPreSelection = f ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.day" id="apidoc.module.react-datepicker.day">module react-datepicker.day</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.day.default" id="apidoc.element.react-datepicker.day.default">
+        function <span class="apidocSignatureSpan">react-datepicker.day.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Day() {
+  var _ref;
+
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Day);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Day.__proto__ || Object.getPrototypeOf(Day)).call.apply
+(_ref, [this].concat(args))), _this), _this.handleClick = function (event) {
+    if (!_this.isDisabled() &#x26;&#x26; _this.props.onClick) {
+      _this.props.onClick(event);
+    }
+  }, _this.handleMouseEnter = function (event) {
+    if (!_this.isDisabled() &#x26;&#x26; _this.props.onMouseEnter) {
+      _this.props.onMouseEnter(event);
+    }
+  }, _this.isSameDay = function (other) {
+    return (0, _date_utils.isSameDay)(_this.props.day, other);
+  }, _this.isKeyboardSelected = function () {
+    return !_this.props.inline &#x26;&#x26; !_this.isSameDay(_this.props.selected) &#x26;&#x26; _this.isSameDay(_this.props.preSelection);
+  }, _this.isDisabled = function () {
+    return (0, _date_utils.isDayDisabled)(_this.props.day, _this.props);
+  }, _this.isHighlighted = function () {
+    var _this$props = _this.props,
+        day = _this$props.day,
+        highlightDates = _this$props.highlightDates;
+
+    if (!highlightDates) {
+      return false;
+    }
+    return highlightDates.some(function (testDay) {
+      return (0, _date_utils.isSameDay)(day, testDay);
+    });
+  }, _this.isInRange = function () {
+    var _this$props2 = _this.props,
+        day = _this$props2.day,
+        startDate = _this$props2.startDate,
+        endDate = _this$props2.endDate;
+
+    if (!startDate || !endDate) {
+      return false;
+    }
+    return (0, _date_utils.isDayInRange)(day, startDate, endDate);
+  }, _this.isInSelectingRange = function () {
+    var _this$props3 = _this.props,
+        day = _this$props3.day,
+        selectsStart = _this$props3.selectsStart,
+        selectsEnd = _this$props3.selectsEnd,
+        selectingDate = _this$props3.selectingDate,
+        startDate = _this$props3.startDate,
+        endDate = _this$props3.endDate;
+
+
+    if (!(selectsStart || selectsEnd) || !selectingDate || _this.isDisabled()) {
+      return false;
+    }
+
+    if (selectsStart &#x26;&#x26; endDate &#x26;&#x26; selectingDate.isSameOrBefore(endDate)) {
+      return (0, _date_utils.isDayInRange)(day, selectingDate, endDate);
+    }
+
+    if (selectsEnd &#x26;&#x26; startDate &#x26;&#x26; selectingDate.isSameOrAfter(startDate)) {
+      return (0, _date_utils.isDayInRange)(day, startDate, selectingDate);
+    }
+
+    return false;
+  }, _this.isSelectingRangeStart = function () {
+    if (!_this.isInSelectingRange()) {
+      return false;
+    }
+
+    var _this$props4 = _this.props,
+        day = _this$props4.day,
+        selectingDate = _this$props4.selectingDate,
+        startDate = _this$props4.startDate,
+        selectsStart = _this$props4.selectsStart;
+
+
+    if (selectsStart) {
+      return (0, _date_utils.isSameDay)(day, selectingDate);
+    } else {
+      return (0, _date_utils.isSameDay)(day, startDate);
+    }
+  }, _this.isSelectingRangeEnd = function () {
+    if (!_this.isInSelectingRange()) {
+      return false;
+    }
+
+    var _this$props5 = _this.props,
+        day = _this$props5.day,
+        selectingDate = _this$props5.selectingDate,
+        endDate = _this$props5.endDate,
+        selectsEnd = _this$props5.selectsEnd;
+
+
+    if (selectsEnd) {
+      return (0, _date_utils.isSameDay)(day, selectingDate);
+    } else {
+      return (0, _date_utils.isSameDay)(day, endDate);
+    }
+  }, _this.isRangeStart = function () {
+    var _this$props6 = _this.props,
+        day = _this$props6.day,
+        startDate = _this$props6.startDate,
+        endDate = _this$props6.endDate;
+
+    if (!startDate || !endDate) {
+      return false;
+    }
+    return (0, _date_utils.isSameDay)(startDate, day);
+  }, _this.isRangeEnd = function () {
+    var _this$props7 = _this.props,
+        day = _this$props7.day,
+        startDate = _this$props7.startDate,
+        endDate = _this$props7.endDate;
+
+    if (!startDate || !endDate) {
+      return false;
+    }
+    return (0, _date_utils.isSameDay)(endDate, day);
+  }, _this.isWeekend = func ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.default" id="apidoc.module.react-datepicker.default">module react-datepicker.default</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.default.default" id="apidoc.element.react-datepicker.default.default">
+        function <span class="apidocSignatureSpan">react-datepicker.</span>default
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function t(e){a(this,t);var n=i(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.getInitialState=function(){var
+ e=n.props.openToDate?(0,w.default)(n.props.openToDate):n.props.selectsEnd&#x26;&#x26;n.props.startDate?(0,w.default)(n.props.startDate):n
+.props.selectsStart&#x26;&#x26;n.props.endDate?(0,w.default)(n.props.endDate):(0,w.default)(),t=(0,v.getEffectiveMinDate)(n.props),o=(0,v.
+getEffectiveMaxDate)(n.props),r=t&#x26;&#x26;e.isBefore(t)?t:o&#x26;&#x26;e.isAfter(o)?o:e;return{open:!1,preventFocus:!1,preSelection:n.props.selected
+?(0,w.default)(n.props.selected):r}},n.clearPreventFocusTimeout=function(){n.preventFocusTimeout&#x26;&#x26;clearTimeout(n.preventFocusTimeout
+)},n.setFocus=function(){n.refs.input.focus()},n.setOpen=function(e){n.setState({open:e,preSelection:e&#x26;&#x26;n.state.open?n.state.preSelection
+:n.getInitialState().preSelection})},n.handleFocus=function(e){n.state.preventFocus||(n.props.onFocus(e),n.setOpen(!0))},n.cancelFocusInput
+=function(){clearTimeout(n.inputFocusTimeout),n.inputFocusTimeout=null},n.deferFocusInput=function(){n.cancelFocusInput(),n.inputFocusTimeout
+=window.setTimeout(function(){return n.setFocus()},1)},n.handleDropdownFocus=function(){n.cancelFocusInput()},n.handleBlur=function
+(e){n.state.open?n.deferFocusInput():n.props.onBlur(e)},n.handleCalendarClickOutside=function(e){n.setOpen(!1),n.props.onClickOutside
+(e),n.props.withPortal&#x26;&#x26;e.preventDefault()},n.handleChange=function(e){if(!n.props.onChangeRaw||(n.props.onChangeRaw(e),!e.isDefaultPrevented
+())){n.setState({inputValue:e.target.value});var t=(0,v.parseDate)(e.target.value,n.props);!t&#x26;&#x26;e.target.value||n.setSelected(t,e
+,!0)}},n.handleSelect=function(e,t){n.setState({preventFocus:!0},function(){return n.preventFocusTimeout=setTimeout(function(){return
+ n.setState({preventFocus:!1})},50),n.preventFocusTimeout}),n.setSelected(e,t),n.setOpen(!1)},n.setSelected=function(e,t,o){var
+r=e;null!==r&#x26;&#x26;(0,v.isDayDisabled)(r,n.props)||((0,v.isSameDay)(n.props.selected,r)||(null!==r&#x26;&#x26;(n.props.selected&#x26;&#x26;(r=(0,w.default
+)(r).set({hour:n.props.selected.hour(),minute:n.props.selected.minute(),second:n.props.selected.second()})),n.setState({preSelection
+:r})),n.props.onChange(r,t)),n.props.onSelect(r,t),o||n.setState({inputValue:null}))},n.setPreSelection=function(e){var t=&#x22;undefined
+&#x22;!=typeof n.props.minDate&#x26;&#x26;&#x22;undefined&#x22;!=typeof n.props.maxDate,o=!t||!e||(0,v.isDayInRange)(e,n.props.minDate,n.props.maxDate);o
+&#x26;&#x26;n.setState({preSelection:e})},n.onInputClick=function(){n.props.disabled||n.setOpen(!0)},n.onInputKeyDown=function(e){if(!n.state
+.open&#x26;&#x26;!n.props.inline)return void(/^Arrow/.test(e.key)&#x26;&#x26;n.onInputClick());var t=(0,w.default)(n.state.preSelection);if(&#x22;Enter&#x22;===
+e.key?(e.preventDefault(),n.handleSelect(t,e)):&#x22;Escape&#x22;===e.key?(e.preventDefault(),n.setOpen(!1)):&#x22;Tab&#x22;===e.key&#x26;&#x26;n.setOpen(!1),!
+n.props.disabledKeyboardNavigation){var o=void 0;switch(e.key){case&#x22;ArrowLeft&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;days&#x22;);break;case
+&#x22;ArrowRight&#x22;:e.preventDefault(),o=t.add(1,&#x22;days&#x22;);break;case&#x22;ArrowUp&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;weeks&#x22;);break;case&#x22;ArrowDown
+&#x22;:e.preventDefault(),o=t.add(1,&#x22;weeks&#x22;);break;case&#x22;PageUp&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;months&#x22;);break;case&#x22;PageDown&#x22;:e.preventDefault
+(),o=t.add(1,&#x22;months&#x22;);break;case&#x22;Home&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;years&#x22;);break;case&#x22;End&#x22;:e.preventDefault(),o=t.add(1,&#x22;
+years&#x22;)}n.setPreSelection(o)}},n.onClearClick=function(e){e.preventDefault(),n.props.onChange(null,e)},n.renderCalendar=function
+(){return n.props.inline||n.state.open&#x26;&#x26;!n.props.disabled?f.default.createElement(k,{ref:&#x22;calendar&#x22;,locale:n.props.locale,dateFormat
+:n.props.dateFormatCalendar,dropdownMode:n.props.dropdownMode,selected:n.props.selected,preSelection:n.state.preSelection,onSelect
+:n.handleSelect,openToDate:n.props.openToDate,minDate:n.props.minDate,maxDate:n.props.maxDate,selectsStart:n.props.selectsStart,
+selectsEnd:n.props.selectsEnd,startDate:n.props.startDate,endDate:n.props.endDate,excludeDates:n.props.excludeDates,filterDate:n
+.props.filterDate,onClickOutside:n.handleCalendarClickOutside,highlightDates:n.props.highlightDates,includeDates:n.p ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.month" id="apidoc.module.react-datepicker.month">module react-datepicker.month</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.month.default" id="apidoc.element.react-datepicker.month.default">
+        function <span class="apidocSignatureSpan">react-datepicker.month.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Month() {
+  var _ref;
+
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Month);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Month.__proto__ || Object.getPrototypeOf(Month)).call
+.apply(_ref, [this].concat(args))), _this), _this.handleDayClick = function (day, event) {
+    if (_this.props.onDayClick) {
+      _this.props.onDayClick(day, event);
+    }
+  }, _this.handleDayMouseEnter = function (day) {
+    if (_this.props.onDayMouseEnter) {
+      _this.props.onDayMouseEnter(day);
+    }
+  }, _this.handleMouseLeave = function () {
+    if (_this.props.onMouseLeave) {
+      _this.props.onMouseLeave();
+    }
+  }, _this.isWeekInMonth = function (startOfWeek) {
+    var day = _this.props.day;
+    var endOfWeek = startOfWeek.clone().add(6, &#x27;days&#x27;);
+    return startOfWeek.isSame(day, &#x27;month&#x27;) || endOfWeek.isSame(day, &#x27;month&#x27;);
+  }, _this.renderWeeks = function () {
+    var weeks = [];
+    var isFixedHeight = _this.props.fixedHeight;
+    var currentWeekStart = _this.props.day.clone().startOf(&#x27;month&#x27;).startOf(&#x27;week&#x27;);
+    var i = 0;
+    var breakAfterNextPush = false;
+
+    while (true) {
+      weeks.push(_react2.default.createElement(_week2.default, {
+        key: i,
+        day: currentWeekStart,
+        month: _this.props.day.month(),
+        onDayClick: _this.handleDayClick,
+        onDayMouseEnter: _this.handleDayMouseEnter,
+        minDate: _this.props.minDate,
+        maxDate: _this.props.maxDate,
+        excludeDates: _this.props.excludeDates,
+        includeDates: _this.props.includeDates,
+        inline: _this.props.inline,
+        highlightDates: _this.props.highlightDates,
+        selectingDate: _this.props.selectingDate,
+        filterDate: _this.props.filterDate,
+        preSelection: _this.props.preSelection,
+        selected: _this.props.selected,
+        selectsStart: _this.props.selectsStart,
+        selectsEnd: _this.props.selectsEnd,
+        showWeekNumber: _this.props.showWeekNumbers,
+        startDate: _this.props.startDate,
+        endDate: _this.props.endDate,
+        utcOffset: _this.props.utcOffset }));
+
+      if (breakAfterNextPush) break;
+
+      i++;
+      currentWeekStart = currentWeekStart.clone().add(1, &#x27;weeks&#x27;);
+
+      // If one of these conditions is true, we will either break on this week
+      // or break on the next week
+      var isFixedAndFinalWeek = isFixedHeight &#x26;&#x26; i &#x3e;= FIXED_HEIGHT_STANDARD_WEEK_COUNT;
+      var isNonFixedAndOutOfMonth = !isFixedHeight &#x26;&#x26; !_this.isWeekInMonth(currentWeekStart);
+
+      if (isFixedAndFinalWeek || isNonFixedAndOutOfMonth) {
+        if (_this.props.peekNextMonth) {
+          breakAfterNextPush = true;
+        } else {
+          break;
+        }
+      }
+    }
+
+    return weeks;
+  }, _this.getClassNames = function () {
+    var _this$props = _this.props,
+        selectingDate = _this$props.selectingDate,
+        selectsStart = _this$props.selectsStart,
+        selectsEnd = _this$props.selectsEnd;
+
+    return (0, _classnames2.default)(&#x27;react-datepicker__month&#x27;, {
+      &#x27;react-datepicker__month--selecting-range&#x27;: selectingDate &#x26;&#x26; (selectsStart || selectsEnd)
+    });
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.month_dropdown" id="apidoc.module.react-datepicker.month_dropdown">module react-datepicker.month_dropdown</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.month_dropdown.default" id="apidoc.element.react-datepicker.month_dropdown.default">
+        function <span class="apidocSignatureSpan">react-datepicker.month_dropdown.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MonthDropdown() {
+  var _ref;
+
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, MonthDropdown);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = MonthDropdown.__proto__ || Object.getPrototypeOf(MonthDropdown
+)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+    dropdownVisible: false
+  }, _this.renderSelectOptions = function (monthNames) {
+    return monthNames.map(function (M, i) {
+      return _react2.default.createElement(
+        &#x27;option&#x27;,
+        { key: i, value: i },
+        M
+      );
+    });
+  }, _this.renderSelectMode = function (monthNames) {
+    return _react2.default.createElement(
+      &#x27;select&#x27;,
+      { value: _this.props.month, className: &#x27;react-datepicker__month-select&#x27;, onChange: function onChange(e) {
+          return _this.onChange(e.target.value);
+        } },
+      _this.renderSelectOptions(monthNames)
+    );
+  }, _this.renderReadView = function (visible, monthNames) {
+    return _react2.default.createElement(
+      &#x27;div&#x27;,
+      { key: &#x27;read&#x27;, style: { visibility: visible ? &#x27;visible&#x27; : &#x27;hidden&#x27; }, className: &#x27;react-datepicker__month-read-view&#x27;, onClick
+: _this.toggleDropdown },
+      _react2.default.createElement(
+        &#x27;span&#x27;,
+        { className: &#x27;react-datepicker__month-read-view--selected-month&#x27; },
+        monthNames[_this.props.month]
+      ),
+      _react2.default.createElement(&#x27;span&#x27;, { className: &#x27;react-datepicker__month-read-view--down-arrow&#x27; })
+    );
+  }, _this.renderDropdown = function (monthNames) {
+    return _react2.default.createElement(WrappedMonthDropdownOptions, {
+      key: &#x27;dropdown&#x27;,
+      ref: &#x27;options&#x27;,
+      month: _this.props.month,
+      monthNames: monthNames,
+      onChange: _this.onChange,
+      onCancel: _this.toggleDropdown });
+  }, _this.renderScrollMode = function (monthNames) {
+    var dropdownVisible = _this.state.dropdownVisible;
+
+    var result = [_this.renderReadView(!dropdownVisible, monthNames)];
+    if (dropdownVisible) {
+      result.unshift(_this.renderDropdown(monthNames));
+    }
+    return result;
+  }, _this.onChange = function (month) {
+    _this.toggleDropdown();
+    if (month !== _this.props.month) {
+      _this.props.onChange(month);
+    }
+  }, _this.toggleDropdown = function () {
+    return _this.setState({
+      dropdownVisible: !_this.state.dropdownVisible
+    });
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.month_dropdown_options" id="apidoc.module.react-datepicker.month_dropdown_options">module react-datepicker.month_dropdown_options</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.month_dropdown_options.default" id="apidoc.element.react-datepicker.month_dropdown_options.default">
+        function <span class="apidocSignatureSpan">react-datepicker.month_dropdown_options.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MonthDropdownOptions() {
+  var _ref;
+
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, MonthDropdownOptions);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = MonthDropdownOptions.__proto__ || Object.getPrototypeOf
+(MonthDropdownOptions)).call.apply(_ref, [this].concat(args))), _this), _this.renderOptions = function () {
+    return _this.props.monthNames.map(function (month, i) {
+      return _react2.default.createElement(
+        &#x27;div&#x27;,
+        { className: &#x27;react-datepicker__month-option&#x27;,
+          key: month,
+          ref: month,
+          onClick: _this.onChange.bind(_this, i) },
+        _this.props.month === i ? _react2.default.createElement(
+          &#x27;span&#x27;,
+          { className: &#x27;react-datepicker__month-option--selected&#x27; },
+          &#x27;\u2713&#x27;
+        ) : &#x27;&#x27;,
+        month
+      );
+    });
+  }, _this.onChange = function (month) {
+    return _this.props.onChange(month);
+  }, _this.handleClickOutside = function () {
+    return _this.props.onCancel();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.tether_component" id="apidoc.module.react-datepicker.tether_component">module react-datepicker.tether_component</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.tether_component.default" id="apidoc.element.react-datepicker.tether_component.default">
+        function <span class="apidocSignatureSpan">react-datepicker.tether_component.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TetherComponent() {
+  var _ref2;
+
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, TetherComponent);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref2 = TetherComponent.__proto__ || Object.getPrototypeOf(TetherComponent
+)).call.apply(_ref2, [this].concat(args))), _this), _this.disable = function () {
+    return _this._tether.disable();
+  }, _this.enable = function () {
+    return _this._tether.enable();
+  }, _this.position = function () {
+    return _this._tether.position();
+  }, _this._destroy = function () {
+    if (_this._elementParentNode) {
+      _reactDom2.default.unmountComponentAtNode(_this._elementParentNode);
+      _this._elementParentNode.parentNode.removeChild(_this._elementParentNode);
+    }
+
+    if (_this._tether) {
+      _this._tether.destroy();
+    }
+
+    _this._elementParentNode = null;
+    _this._tether = null;
+  }, _this._update = function () {
+    var _this$props = _this.props,
+        children = _this$props.children,
+        renderElementTag = _this$props.renderElementTag,
+        renderElementTo = _this$props.renderElementTo;
+
+    var elementComponent = children[1];
+
+    // if no element component provided, bail out
+    if (!elementComponent) {
+      // destroy Tether elements if they have been created
+      if (_this._tether) {
+        _this._destroy();
+      }
+      return;
+    }
+
+    // create element node container if it hasn&#x27;t been yet
+    if (!_this._elementParentNode) {
+      // create a node that we can stick our content Component in
+      _this._elementParentNode = document.createElement(renderElementTag);
+
+      // append node to the end of the body
+      var renderTo = renderElementTo || document.body;
+      renderTo.appendChild(_this._elementParentNode);
+    }
+
+    // render element component into the DOM
+    _reactDom2.default.unstable_renderSubtreeIntoContainer(_this, elementComponent, _this._elementParentNode, function () {
+      // don&#x27;t update Tether until the subtree has finished rendering
+      _this._updateTether();
+    });
+  }, _this._updateTether = function () {
+    var _this$props2 = _this.props,
+        renderElementTag = _this$props2.renderElementTag,
+        renderElementTo = _this$props2.renderElementTo,
+        options = _objectWithoutProperties(_this$props2, [&#x27;renderElementTag&#x27;, &#x27;renderElementTo&#x27;]); // eslint-disable-line no-unused
+-vars
+
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.default(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.week" id="apidoc.module.react-datepicker.week">module react-datepicker.week</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.week.default" id="apidoc.element.react-datepicker.week.default">
+        function <span class="apidocSignatureSpan">react-datepicker.week.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Week() {
+  var _ref;
+
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, Week);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Week.__proto__ || Object.getPrototypeOf(Week)).call.apply
+(_ref, [this].concat(args))), _this), _this.handleDayClick = function (day, event) {
+    if (_this.props.onDayClick) {
+      _this.props.onDayClick(day, event);
+    }
+  }, _this.handleDayMouseEnter = function (day) {
+    if (_this.props.onDayMouseEnter) {
+      _this.props.onDayMouseEnter(day);
+    }
+  }, _this.renderDays = function () {
+    var startOfWeek = _this.props.day.clone().startOf(&#x27;week&#x27;);
+    var days = [];
+    if (_this.props.showWeekNumber) {
+      days.push(_react2.default.createElement(_week_number2.default, { key: &#x27;W&#x27;, weekNumber: parseInt(startOfWeek.format(&#x27;w&#x27;), 10
+) }));
+    }
+    return days.concat([0, 1, 2, 3, 4, 5, 6].map(function (offset) {
+      var day = startOfWeek.clone().add(offset, &#x27;days&#x27;);
+      return _react2.default.createElement(_day2.default, {
+        key: offset,
+        day: day,
+        month: _this.props.month,
+        onClick: _this.handleDayClick.bind(_this, day),
+        onMouseEnter: _this.handleDayMouseEnter.bind(_this, day),
+        minDate: _this.props.minDate,
+        maxDate: _this.props.maxDate,
+        excludeDates: _this.props.excludeDates,
+        includeDates: _this.props.includeDates,
+        inline: _this.props.inline,
+        highlightDates: _this.props.highlightDates,
+        selectingDate: _this.props.selectingDate,
+        filterDate: _this.props.filterDate,
+        preSelection: _this.props.preSelection,
+        selected: _this.props.selected,
+        selectsStart: _this.props.selectsStart,
+        selectsEnd: _this.props.selectsEnd,
+        startDate: _this.props.startDate,
+        endDate: _this.props.endDate,
+        utcOffset: _this.props.utcOffset });
+    }));
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.week_number" id="apidoc.module.react-datepicker.week_number">module react-datepicker.week_number</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.week_number.default" id="apidoc.element.react-datepicker.week_number.default">
+        function <span class="apidocSignatureSpan">react-datepicker.week_number.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function WeekNumber() {
+  _classCallCheck(this, WeekNumber);
+
+  return _possibleConstructorReturn(this, (WeekNumber.__proto__ || Object.getPrototypeOf(WeekNumber)).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.year_dropdown" id="apidoc.module.react-datepicker.year_dropdown">module react-datepicker.year_dropdown</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.year_dropdown.default" id="apidoc.element.react-datepicker.year_dropdown.default">
+        function <span class="apidocSignatureSpan">react-datepicker.year_dropdown.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function YearDropdown() {
+  var _ref;
+
+  var _temp, _this, _ret;
+
+  _classCallCheck(this, YearDropdown);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = YearDropdown.__proto__ || Object.getPrototypeOf(YearDropdown
+)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+    dropdownVisible: false
+  }, _this.renderSelectOptions = function () {
+    var minYear = _this.props.minDate ? _this.props.minDate.year() : 1900;
+    var maxYear = _this.props.maxDate ? _this.props.maxDate.year() : 2100;
+
+    var options = [];
+    for (var i = minYear; i &#x3c;= maxYear; i++) {
+      options.push(_react2.default.createElement(
+        &#x27;option&#x27;,
+        { key: i, value: i },
+        i
+      ));
+    }
+    return options;
+  }, _this.onSelectChange = function (e) {
+    _this.onChange(e.target.value);
+  }, _this.renderSelectMode = function () {
+    return _react2.default.createElement(
+      &#x27;select&#x27;,
+      {
+        value: _this.props.year,
+        className: &#x27;react-datepicker__year-select&#x27;,
+        onChange: _this.onSelectChange },
+      _this.renderSelectOptions()
+    );
+  }, _this.renderReadView = function (visible) {
+    return _react2.default.createElement(
+      &#x27;div&#x27;,
+      { key: &#x27;read&#x27;, style: { visibility: visible ? &#x27;visible&#x27; : &#x27;hidden&#x27; }, className: &#x27;react-datepicker__year-read-view&#x27;, onClick
+: _this.toggleDropdown },
+      _react2.default.createElement(&#x27;span&#x27;, { className: &#x27;react-datepicker__year-read-view--down-arrow&#x27; }),
+      _react2.default.createElement(
+        &#x27;span&#x27;,
+        { className: &#x27;react-datepicker__year-read-view--selected-year&#x27; },
+        _this.props.year
+      )
+    );
+  }, _this.renderDropdown = function () {
+    return _react2.default.createElement(WrappedYearDropdownOptions, {
+      key: &#x27;dropdown&#x27;,
+      ref: &#x27;options&#x27;,
+      year: _this.props.year,
+      onChange: _this.onChange,
+      onCancel: _this.toggleDropdown,
+      scrollableYearDropdown: _this.props.scrollableYearDropdown });
+  }, _this.renderScrollMode = function () {
+    var dropdownVisible = _this.state.dropdownVisible;
+
+    var result = [_this.renderReadView(!dropdownVisible)];
+    if (dropdownVisible) {
+      result.unshift(_this.renderDropdown());
+    }
+    return result;
+  }, _this.onChange = function (year) {
+    _this.toggleDropdown();
+    if (year === _this.props.year) return;
+    _this.props.onChange(year);
+  }, _this.toggleDropdown = function () {
+    _this.setState({
+      dropdownVisible: !_this.state.dropdownVisible
+    });
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-datepicker.year_dropdown_options" id="apidoc.module.react-datepicker.year_dropdown_options">module react-datepicker.year_dropdown_options</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-datepicker.year_dropdown_options.default" id="apidoc.element.react-datepicker.year_dropdown_options.default">
+        function <span class="apidocSignatureSpan">react-datepicker.year_dropdown_options.</span>default
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function YearDropdownOptions(props) {
+  _classCallCheck(this, YearDropdownOptions);
+
+  var _this = _possibleConstructorReturn(this, (YearDropdownOptions.__proto__ || Object.getPrototypeOf(YearDropdownOptions)).call
+(this, props));
+
+  _this.renderOptions = function () {
+    var selectedYear = _this.props.year;
+    var options = _this.state.yearsList.map(function (year) {
+      return _react2.default.createElement(
+        &#x27;div&#x27;,
+        { className: &#x27;react-datepicker__year-option&#x27;,
+          key: year,
+          ref: year,
+          onClick: _this.onChange.bind(_this, year) },
+        selectedYear === year ? _react2.default.createElement(
+          &#x27;span&#x27;,
+          { className: &#x27;react-datepicker__year-option--selected&#x27; },
+          &#x27;\u2713&#x27;
+        ) : &#x27;&#x27;,
+        year
+      );
+    });
+
+    options.unshift(_react2.default.createElement(
+      &#x27;div&#x27;,
+      { className: &#x27;react-datepicker__year-option&#x27;,
+        ref: &#x27;upcoming&#x27;,
+        key: &#x27;upcoming&#x27;,
+        onClick: _this.incrementYears },
+      _react2.default.createElement(&#x27;a&#x27;, { className: &#x27;react-datepicker__navigation react-datepicker__navigation--years react-datepicker__navigation
+--years-upcoming&#x27; })
+    ));
+    options.push(_react2.default.createElement(
+      &#x27;div&#x27;,
+      { className: &#x27;react-datepicker__year-option&#x27;,
+        ref: &#x27;previous&#x27;,
+        key: &#x27;previous&#x27;,
+        onClick: _this.decrementYears },
+      _react2.default.createElement(&#x27;a&#x27;, { className: &#x27;react-datepicker__navigation react-datepicker__navigation--years react-datepicker__navigation
+--years-previous&#x27; })
+    ));
+    return options;
+  };
+
+  _this.onChange = function (year) {
+    _this.props.onChange(year);
+  };
+
+  _this.handleClickOutside = function () {
+    _this.props.onCancel();
+  };
+
+  _this.shiftYears = function (amount) {
+    var years = _this.state.yearsList.map(function (year) {
+      return year + amount;
+    });
+
+    _this.setState({
+      yearsList: years
+    });
+  };
+
+  _this.incrementYears = function () {
+    return _this.shiftYears(1);
+  };
+
+  _this.decrementYears = function () {
+    return _this.shiftYears(-1);
+  };
+
+  _this.state = {
+    yearsList: _this.props.scrollableYearDropdown ? generateYears(_this.props.year, 10) : generateYears(_this.props.year, 5)
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    var tetherOptions = _extends({
+      target: _this._targetNode,
+      element: _this._elementParentNode
+    }, options);
+
+    if (!_this._tether) {
+      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+    } else {
+      _this._tether.setOptions(tetherOptions);
+    }
+
+    _this._tether.position();
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
