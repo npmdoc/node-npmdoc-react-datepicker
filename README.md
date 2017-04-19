@@ -1,4 +1,7 @@
-# api documentation for  [react-datepicker (v0.46.0)](https://github.com/Hacker0x01/react-datepicker)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-datepicker.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-datepicker) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-datepicker.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-datepicker)
+# npmdoc-react-datepicker
+
+#### api documentation for  [react-datepicker (v0.46.0)](https://github.com/Hacker0x01/react-datepicker)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-datepicker.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-datepicker) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-datepicker.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-datepicker)
+
 #### A simple and reusable datepicker component for React
 
 [![NPM](https://nodei.co/npm/react-datepicker.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-datepicker)
