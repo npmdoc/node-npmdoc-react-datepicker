@@ -277,19 +277,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.default">module react-datepicker.default</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.default.default">
-            function <span class="apidocSignatureSpan">react-datepicker.</span>default
-            <span class="apidocSignatureSpan">(e)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
     <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.month">module react-datepicker.month</a><ol>
 
         <li>
@@ -1188,70 +1175,6 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
     }
     return (0, _date_utils.isSameDay)(endDate, day);
   }, _this.isWeekend = func ...</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
-
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
-
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.react-datepicker.default" id="apidoc.module.react-datepicker.default">module react-datepicker.default</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.react-datepicker.default.default" id="apidoc.element.react-datepicker.default.default">
-        function <span class="apidocSignatureSpan">react-datepicker.</span>default
-        <span class="apidocSignatureSpan">(e)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function t(e){a(this,t);var n=i(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.getInitialState=function(){var
- e=n.props.openToDate?(0,w.default)(n.props.openToDate):n.props.selectsEnd&#x26;&#x26;n.props.startDate?(0,w.default)(n.props.startDate):n
-.props.selectsStart&#x26;&#x26;n.props.endDate?(0,w.default)(n.props.endDate):(0,w.default)(),t=(0,v.getEffectiveMinDate)(n.props),o=(0,v.
-getEffectiveMaxDate)(n.props),r=t&#x26;&#x26;e.isBefore(t)?t:o&#x26;&#x26;e.isAfter(o)?o:e;return{open:!1,preventFocus:!1,preSelection:n.props.selected
-?(0,w.default)(n.props.selected):r}},n.clearPreventFocusTimeout=function(){n.preventFocusTimeout&#x26;&#x26;clearTimeout(n.preventFocusTimeout
-)},n.setFocus=function(){n.refs.input.focus()},n.setOpen=function(e){n.setState({open:e,preSelection:e&#x26;&#x26;n.state.open?n.state.preSelection
-:n.getInitialState().preSelection})},n.handleFocus=function(e){n.state.preventFocus||(n.props.onFocus(e),n.setOpen(!0))},n.cancelFocusInput
-=function(){clearTimeout(n.inputFocusTimeout),n.inputFocusTimeout=null},n.deferFocusInput=function(){n.cancelFocusInput(),n.inputFocusTimeout
-=window.setTimeout(function(){return n.setFocus()},1)},n.handleDropdownFocus=function(){n.cancelFocusInput()},n.handleBlur=function
-(e){n.state.open?n.deferFocusInput():n.props.onBlur(e)},n.handleCalendarClickOutside=function(e){n.setOpen(!1),n.props.onClickOutside
-(e),n.props.withPortal&#x26;&#x26;e.preventDefault()},n.handleChange=function(e){if(!n.props.onChangeRaw||(n.props.onChangeRaw(e),!e.isDefaultPrevented
-())){n.setState({inputValue:e.target.value});var t=(0,v.parseDate)(e.target.value,n.props);!t&#x26;&#x26;e.target.value||n.setSelected(t,e
-,!0)}},n.handleSelect=function(e,t){n.setState({preventFocus:!0},function(){return n.preventFocusTimeout=setTimeout(function(){return
- n.setState({preventFocus:!1})},50),n.preventFocusTimeout}),n.setSelected(e,t),n.setOpen(!1)},n.setSelected=function(e,t,o){var
-r=e;null!==r&#x26;&#x26;(0,v.isDayDisabled)(r,n.props)||((0,v.isSameDay)(n.props.selected,r)||(null!==r&#x26;&#x26;(n.props.selected&#x26;&#x26;(r=(0,w.default
-)(r).set({hour:n.props.selected.hour(),minute:n.props.selected.minute(),second:n.props.selected.second()})),n.setState({preSelection
-:r})),n.props.onChange(r,t)),n.props.onSelect(r,t),o||n.setState({inputValue:null}))},n.setPreSelection=function(e){var t=&#x22;undefined
-&#x22;!=typeof n.props.minDate&#x26;&#x26;&#x22;undefined&#x22;!=typeof n.props.maxDate,o=!t||!e||(0,v.isDayInRange)(e,n.props.minDate,n.props.maxDate);o
-&#x26;&#x26;n.setState({preSelection:e})},n.onInputClick=function(){n.props.disabled||n.setOpen(!0)},n.onInputKeyDown=function(e){if(!n.state
-.open&#x26;&#x26;!n.props.inline)return void(/^Arrow/.test(e.key)&#x26;&#x26;n.onInputClick());var t=(0,w.default)(n.state.preSelection);if(&#x22;Enter&#x22;===
-e.key?(e.preventDefault(),n.handleSelect(t,e)):&#x22;Escape&#x22;===e.key?(e.preventDefault(),n.setOpen(!1)):&#x22;Tab&#x22;===e.key&#x26;&#x26;n.setOpen(!1),!
-n.props.disabledKeyboardNavigation){var o=void 0;switch(e.key){case&#x22;ArrowLeft&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;days&#x22;);break;case
-&#x22;ArrowRight&#x22;:e.preventDefault(),o=t.add(1,&#x22;days&#x22;);break;case&#x22;ArrowUp&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;weeks&#x22;);break;case&#x22;ArrowDown
-&#x22;:e.preventDefault(),o=t.add(1,&#x22;weeks&#x22;);break;case&#x22;PageUp&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;months&#x22;);break;case&#x22;PageDown&#x22;:e.preventDefault
-(),o=t.add(1,&#x22;months&#x22;);break;case&#x22;Home&#x22;:e.preventDefault(),o=t.subtract(1,&#x22;years&#x22;);break;case&#x22;End&#x22;:e.preventDefault(),o=t.add(1,&#x22;
-years&#x22;)}n.setPreSelection(o)}},n.onClearClick=function(e){e.preventDefault(),n.props.onChange(null,e)},n.renderCalendar=function
-(){return n.props.inline||n.state.open&#x26;&#x26;!n.props.disabled?f.default.createElement(k,{ref:&#x22;calendar&#x22;,locale:n.props.locale,dateFormat
-:n.props.dateFormatCalendar,dropdownMode:n.props.dropdownMode,selected:n.props.selected,preSelection:n.state.preSelection,onSelect
-:n.handleSelect,openToDate:n.props.openToDate,minDate:n.props.minDate,maxDate:n.props.maxDate,selectsStart:n.props.selectsStart,
-selectsEnd:n.props.selectsEnd,startDate:n.props.startDate,endDate:n.props.endDate,excludeDates:n.props.excludeDates,filterDate:n
-.props.filterDate,onClickOutside:n.handleCalendarClickOutside,highlightDates:n.props.highlightDates,includeDates:n.p ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
     var tetherOptions = _extends({

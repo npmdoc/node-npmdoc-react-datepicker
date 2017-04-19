@@ -270,19 +270,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.default">module react-datepicker.default</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.react-datepicker.default.default">
-            function <span class="apidocSignatureSpan">react-datepicker.</span>default
-            <span class="apidocSignatureSpan">(e)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
     <li class="apidocModuleLi"><a href="#apidoc.module.react-datepicker.month">module react-datepicker.month</a><ol>
 
         <li>
@@ -1181,70 +1168,6 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
     }
     return (0, _date_utils.isSameDay)(endDate, day);
   }, _this.isWeekend = func ...</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
-
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
-
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.react-datepicker.default" id="apidoc.module.react-datepicker.default">module react-datepicker.default</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.react-datepicker.default.default" id="apidoc.element.react-datepicker.default.default">
-        function <span class="apidocSignatureSpan">react-datepicker.</span>default
-        <span class="apidocSignatureSpan">(e)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function t(e){a(this,t);var n=i(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.getInitialState=function(){var
- e=n.props.openToDate?(0,w.default)(n.props.openToDate):n.props.selectsEnd&amp;&amp;n.props.startDate?(0,w.default)(n.props.startDate):n
-.props.selectsStart&amp;&amp;n.props.endDate?(0,w.default)(n.props.endDate):(0,w.default)(),t=(0,v.getEffectiveMinDate)(n.props),o=(0,v.
-getEffectiveMaxDate)(n.props),r=t&amp;&amp;e.isBefore(t)?t:o&amp;&amp;e.isAfter(o)?o:e;return{open:!1,preventFocus:!1,preSelection:n.props.selected
-?(0,w.default)(n.props.selected):r}},n.clearPreventFocusTimeout=function(){n.preventFocusTimeout&amp;&amp;clearTimeout(n.preventFocusTimeout
-)},n.setFocus=function(){n.refs.input.focus()},n.setOpen=function(e){n.setState({open:e,preSelection:e&amp;&amp;n.state.open?n.state.preSelection
-:n.getInitialState().preSelection})},n.handleFocus=function(e){n.state.preventFocus||(n.props.onFocus(e),n.setOpen(!0))},n.cancelFocusInput
-=function(){clearTimeout(n.inputFocusTimeout),n.inputFocusTimeout=null},n.deferFocusInput=function(){n.cancelFocusInput(),n.inputFocusTimeout
-=window.setTimeout(function(){return n.setFocus()},1)},n.handleDropdownFocus=function(){n.cancelFocusInput()},n.handleBlur=function
-(e){n.state.open?n.deferFocusInput():n.props.onBlur(e)},n.handleCalendarClickOutside=function(e){n.setOpen(!1),n.props.onClickOutside
-(e),n.props.withPortal&amp;&amp;e.preventDefault()},n.handleChange=function(e){if(!n.props.onChangeRaw||(n.props.onChangeRaw(e),!e.isDefaultPrevented
-())){n.setState({inputValue:e.target.value});var t=(0,v.parseDate)(e.target.value,n.props);!t&amp;&amp;e.target.value||n.setSelected(t,e
-,!0)}},n.handleSelect=function(e,t){n.setState({preventFocus:!0},function(){return n.preventFocusTimeout=setTimeout(function(){return
- n.setState({preventFocus:!1})},50),n.preventFocusTimeout}),n.setSelected(e,t),n.setOpen(!1)},n.setSelected=function(e,t,o){var
-r=e;null!==r&amp;&amp;(0,v.isDayDisabled)(r,n.props)||((0,v.isSameDay)(n.props.selected,r)||(null!==r&amp;&amp;(n.props.selected&amp;&amp;(r=(0,w.default
-)(r).set({hour:n.props.selected.hour(),minute:n.props.selected.minute(),second:n.props.selected.second()})),n.setState({preSelection
-:r})),n.props.onChange(r,t)),n.props.onSelect(r,t),o||n.setState({inputValue:null}))},n.setPreSelection=function(e){var t="undefined
-"!=typeof n.props.minDate&amp;&amp;"undefined"!=typeof n.props.maxDate,o=!t||!e||(0,v.isDayInRange)(e,n.props.minDate,n.props.maxDate);o
-&amp;&amp;n.setState({preSelection:e})},n.onInputClick=function(){n.props.disabled||n.setOpen(!0)},n.onInputKeyDown=function(e){if(!n.state
-.open&amp;&amp;!n.props.inline)return void(/^Arrow/.test(e.key)&amp;&amp;n.onInputClick());var t=(0,w.default)(n.state.preSelection);if("Enter"===
-e.key?(e.preventDefault(),n.handleSelect(t,e)):"Escape"===e.key?(e.preventDefault(),n.setOpen(!1)):"Tab"===e.key&amp;&amp;n.setOpen(!1),!
-n.props.disabledKeyboardNavigation){var o=void 0;switch(e.key){case"ArrowLeft":e.preventDefault(),o=t.subtract(1,"days");break;case
-"ArrowRight":e.preventDefault(),o=t.add(1,"days");break;case"ArrowUp":e.preventDefault(),o=t.subtract(1,"weeks");break;case"ArrowDown
-":e.preventDefault(),o=t.add(1,"weeks");break;case"PageUp":e.preventDefault(),o=t.subtract(1,"months");break;case"PageDown":e.preventDefault
-(),o=t.add(1,"months");break;case"Home":e.preventDefault(),o=t.subtract(1,"years");break;case"End":e.preventDefault(),o=t.add(1,"
-years")}n.setPreSelection(o)}},n.onClearClick=function(e){e.preventDefault(),n.props.onChange(null,e)},n.renderCalendar=function
-(){return n.props.inline||n.state.open&amp;&amp;!n.props.disabled?f.default.createElement(k,{ref:"calendar",locale:n.props.locale,dateFormat
-:n.props.dateFormatCalendar,dropdownMode:n.props.dropdownMode,selected:n.props.selected,preSelection:n.state.preSelection,onSelect
-:n.handleSelect,openToDate:n.props.openToDate,minDate:n.props.minDate,maxDate:n.props.maxDate,selectsStart:n.props.selectsStart,
-selectsEnd:n.props.selectsEnd,startDate:n.props.startDate,endDate:n.props.endDate,excludeDates:n.props.excludeDates,filterDate:n
-.props.filterDate,onClickOutside:n.handleCalendarClickOutside,highlightDates:n.props.highlightDates,includeDates:n.p ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
     var tetherOptions = _extends({
