@@ -420,20 +420,20 @@ selectsEnd:n.props.selectsEnd,startDate:n.props.startDate,endDate:n.props.endDat
 .props.filterDate,onClickOutside:n.handleCalendarClickOutside,highlightDates:n.props.highlightDates,includeDates:n.p ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -607,20 +607,20 @@ selectsEnd:n.props.selectsEnd,startDate:n.props.startDate,endDate:n.props.endDat
     if (!_this.props.forceShowMonthNavigation &amp;&amp; (0, _date_utils.allDaysDisabledAfter) ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -786,21 +786,21 @@ function (excludeDate) {
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-}, _this.handleMouseEnter = function (event) {
-  if (!_this.isDisabled() &amp;&amp; _this.props.onMouseEnter) {
-    _this.props.onMouseEnter(event);
-  }
-}, _this.isSameDay = function (other) {
-  return (0, _date_utils.isSameDay)(_this.props.day, other);
-}, _this.isKeyboardSelected = function () {
-  return !_this.props.inline &amp;&amp; !_this.<span class="apidocCodeKeywordSpan">isSameDay</span>(_this.props.selected) &amp;
-;&amp; _this.isSameDay(_this.props.preSelection);
-}, _this.isDisabled = function () {
-  return (0, _date_utils.isDayDisabled)(_this.props.day, _this.props);
-}, _this.isHighlighted = function () {
-  var _this$props = _this.props,
-      day = _this$props.day,
-      highlightDates = _this$props.highlightDates;
+	    }, _this.handleMouseEnter = function (event) {
+	      if (!_this.isDisabled() &amp;&amp; _this.props.onMouseEnter) {
+	        _this.props.onMouseEnter(event);
+	      }
+	    }, _this.isSameDay = function (other) {
+	      return (0, _date_utils.isSameDay)(_this.props.day, other);
+	    }, _this.isKeyboardSelected = function () {
+	      return !_this.props.inline &amp;&amp; !_this.<span class="apidocCodeKeywordSpan">isSameDay</span>(_this.props.selected) &amp;#
+x26;&amp; _this.isSameDay(_this.props.preSelection);
+	    }, _this.isDisabled = function () {
+	      return (0, _date_utils.isDayDisabled)(_this.props.day, _this.props);
+	    }, _this.isHighlighted = function () {
+	      var _this$props = _this.props,
+	          day = _this$props.day,
+	          highlightDates = _this$props.highlightDates;
 ...</pre></li>
     </ul>
 
@@ -1012,20 +1012,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
   _this.setPreSelection = f ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -1170,20 +1170,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
   }, _this.isWeekend = func ...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -1293,20 +1293,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -1395,20 +1395,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -1462,20 +1462,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -1579,20 +1579,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -1665,20 +1665,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -1703,20 +1703,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -1812,20 +1812,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
@@ -1921,20 +1921,20 @@ _this.props.startDate ? (0, _moment2.default)(_this.props.startDate) : _this.pro
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-    var tetherOptions = _extends({
-      target: _this._targetNode,
-      element: _this._elementParentNode
-    }, options);
+	      var tetherOptions = _extends({
+	        target: _this._targetNode,
+	        element: _this._elementParentNode
+	      }, options);
 
-    if (!_this._tether) {
-      _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
-    } else {
-      _this._tether.setOptions(tetherOptions);
-    }
+	      if (!_this._tether) {
+	        _this._tether = new _tether2.<span class="apidocCodeKeywordSpan">default</span>(tetherOptions);
+	      } else {
+	        _this._tether.setOptions(tetherOptions);
+	      }
 
-    _this._tether.position();
-  }, _temp), _possibleConstructorReturn(_this, _ret);
-}
+	      _this._tether.position();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
 ...</pre></li>
     </ul>
 
